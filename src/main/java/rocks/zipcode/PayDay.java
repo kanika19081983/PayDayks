@@ -64,11 +64,11 @@ public class PayDay {
     }
     public double deductTax(double gross, double taxRate) {
 
-
-        return -1.0;
+        return gross * taxRate;
     }
     public double netPay(double gross, double deduction) {
-        return -1.0;
+
+        return gross - deduction;
     }
 
     /*
@@ -81,7 +81,7 @@ public class PayDay {
      * USE this inside of pay() as well!
      */
     public String formatDollars(double amount) {
-        return "1.00";
+        return String.format( "%.2f", amount);
     }
 
     /**
