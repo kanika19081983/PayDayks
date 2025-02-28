@@ -2,9 +2,8 @@ package rocks.zipcode;
 
 // USE JUNIT 5.
 
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
+import org.testng.annotations.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PayDayTest {
     @Test
