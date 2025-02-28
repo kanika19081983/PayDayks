@@ -53,7 +53,10 @@ public class PayDay {
      * @return a string of the form "Kris 215.00 10.75 204.25”
      */
     public String pay(String name, double hourlyRate, double hoursWorked, double taxRate) {
-        return null;
+        double gp = this.grossPay(hourlyRate,hoursWorked);
+        double dt = this.deductTax(gp, taxRate);
+        double np = this. netPay(gp,dt);
+        return String.format ("%s %.2f %.2f %.2f", name, gp, dt, np );
     }
 
     // each of these will be USED inside of pay() ^^^^^
