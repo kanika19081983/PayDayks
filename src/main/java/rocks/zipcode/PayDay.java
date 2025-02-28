@@ -56,6 +56,7 @@ public class PayDay {
         return null;
     }
 
+    // each of these will be USED inside of pay() ^^^^^
     public double grossPay(double rate, double hours) {
         return -1.0;
     }
@@ -72,6 +73,8 @@ public class PayDay {
      * 100 -> "100.00"
      * 100.25225 -> "100.25"
      * 33.333333333 -> "33.33"
+     *
+     * USE this inside of pay() as well!
      */
     public String formatDollars(double amount) {
         return "1.00";
@@ -79,7 +82,7 @@ public class PayDay {
 
     /**
      * for the example of how the *pay* method might be used to create a text report
-     *
+     * this is meant for you to think about how&why pay() is created.
      */
     private class TimeCard {
         private String name;
